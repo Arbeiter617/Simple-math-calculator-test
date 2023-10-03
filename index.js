@@ -1,4 +1,4 @@
-var inputString = "10 plus 200 minus 200 plus 10000 minus 1000000"
+var inputString = "10 times 2"
 var newArray = [];
 
 var oddNumbers = [];
@@ -32,6 +32,11 @@ function checkSigns() {
       inputString = inputString.replace(oddNumbers[i], "+");
     } else if(oddNumbers[i] === "minus") {
       inputString = inputString.replace(oddNumbers[i], "-");
+      console.log(inputString);
+    } else if(oddNumbers[i] === "divided") {
+      inputString = inputString.replace(oddNumbers[i], "/");
+    } else if(oddNumbers[i] === "times") {
+      inputString = inputString.replace(oddNumbers[i], "*");
       console.log(inputString);
     } else {
       return;
